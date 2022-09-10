@@ -1,14 +1,18 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "@firebase/firestore"
 
+// import dotenv from 'dotenv/config' ;
+// dotenv.config();
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDoe-3303AoH9dD9KxirzKNeLLqNgJE5rQ",
-    authDomain: "crud-app-a9568.firebaseapp.com",
-    projectId: "crud-app-a9568",
-    storageBucket: "crud-app-a9568.appspot.com",
-    messagingSenderId: "65304769253",
-    appId: "1:65304769253:web:3f17aa1f2996a582429a0c",
-    measurementId: "G-8M92R7RHTL"
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MSGSENDERID,
+    appId: process.env.REACT_APP_APPID,
+    measurementId: process.env.REACT_APP_MEASUREMENTID
   };
 
 
